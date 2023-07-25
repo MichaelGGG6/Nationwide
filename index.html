@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logo with Image and Body</title>
+    <style>
+        /* CSS for the header */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100px;
+            background-color: #ffffff; /* Optional: Add background color to the header */
+			border-bottom: 3px solid #D0D0D0; /* Add a thin line below the header */
+        }
+
+        /* CSS for the logo */
+        .logo {
+            max-width: 100px; /* Adjust the size as needed */
+        }
+
+        /* CSS for the body container */
+        .body-container {
+            background-color: #F3F5F7; /* Background color for the body */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px); /* Adjust the body height, considering the header height */
+        }
+
+        /* CSS for the larger image in the body */
+        .larger-image {
+            max-width: 300px; /* Adjust the size as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="LOGO.png" alt="Logo">
+    </header>
+
+    <div class="body-container">
+        <img class="larger-image" src="path/to/larger-image.png" alt="Larger Image">
+        <!-- Add any additional content for the body here -->
+    </div>
+</body>
+</html>
