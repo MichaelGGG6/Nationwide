@@ -1,43 +1,79 @@
 
 
 
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Logo with Image and Body</title>
+    <title>Footer with Buttons</title>
     <style>
-        /* CSS for the header */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
         header {
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             height: 100px;
-            background-color: #ffffff; /* Optional: Add background color to the header */
-			border-bottom: 3px solid #D0D0D0; /* Add a thin line below the header */
+            background-color: #ffffff;
+            border-bottom: 3px solid #D0D0D0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
 
-        /* CSS for the logo */
         .logo {
-            max-width: 100px; /* Adjust the size as needed */
+            max-width: 100px;
         }
 
-        /* CSS for the body container */
         .body-container {
-            background-color: #F3F5F7; /* Background color for the body */
+            background-color: #F3F5F7;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: calc(100vh - 100px); /* Adjust the body height, considering the header height */
+            flex: 1;
         }
 
-        /* CSS for the larger image in the body */
         .larger-image {
-            max-width: 300px; /* Adjust the size as needed */
+            max-width: 300px;
         }
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: #ffffff;
+            border-top: 3px solid #D0D0D0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 0 20px;
+        }
+
+        .footer-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+			justify-content: center;
+            cursor: pointer;
+			height: 100px; /* Adjust the height as needed */
+            width: 100px; /* Adjust the width as needed */
+        }
+
+        .footer-logo {
+            max-width: 60px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .footer-text {
+            margin-top: 5px;
+			text-allign: center;
+        }
+
+
     </style>
 </head>
 <body>
@@ -49,5 +85,24 @@
         <img class="larger-image" src="path/to/larger-image.png" alt="Larger Image">
         <!-- Add any additional content for the body here -->
     </div>
+
+     <footer>
+        <div class="footer-button" id="button1">
+            <img class="footer-logo" src="b1a.jpeg" alt="Button 1 Logo">
+            <div class="footer-text">Log In</div>
+        </div>
+        <div class="footer-button" id="button2">
+            <img class="footer-logo" src="time.jpeg" alt="Button 2 Logo">
+            <div class="footer-text">Quick Balance</div>
+        </div>
+        <div class="footer-button" id="button3">
+            <img class="footer-logo" src="pig.jpeg" alt="Button 3 Logo">
+            <div class="footer-text">Impulse Saver</div>
+        </div>
+        <div class="footer-button" id="button4">
+            <img class="footer-logo" src="help.jpeg" alt="Button 4 Logo">
+            <div class="footer-text">Help</div>
+        </div>
+    </footer>
 </body>
 </html>
