@@ -4,11 +4,12 @@
 <head>
     <title>Footer with Buttons</title>
     <style>
+	
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: "Avenir 95 Black", sans-serif;
+            font-family: "Roboto Condensed", Arial, sans-serif;
         }
 
         body {
@@ -20,7 +21,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 120px;
+            height: 140px;
             background-color: #ffffff;
             border-bottom: 3px solid #D0D0D0;
             border-top-left-radius: 10px;
@@ -28,7 +29,7 @@
         }
 
         .logo {
-            max-width: 120px;
+            max-width: 140px;
         }
 
         .body-container {
@@ -51,12 +52,12 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            height: 130px;
+            height: 150px;
             background-color: #ffffff;
             border-top: 5px solid #D0D0D0; /* Set the top border to light gray (#D0D0D0) with 5px solid */
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
-            padding: 0 20px;
+            padding: 0 px;
             position: relative; /* To add the red border */
         }
 
@@ -71,7 +72,7 @@
         }
 
         .footer-logo {
-            max-width: 80px;
+            max-width: 110px;
             transition: all 0.3s ease-in-out;
         }
 
@@ -111,10 +112,10 @@
     </div>
 
     <footer>
-	<a class="footer-button" id="button1">
-    <img class="footer-logo" src="b1b.jpeg" alt="Button 1 Logo">
-    <div class="footer-text">Log In</div>
-</a>
+        <a class="footer-button" id="button1">
+            <img class="footer-logo" src="b1b.jpeg" alt="Button 1 Logo">
+            <div class="footer-text">Log In</div>
+        </a>
         
         <div class="footer-button" id="button2">
             <img class="footer-logo" src="time.jpeg" alt="Button 2 Logo">
@@ -138,106 +139,143 @@
             <html>
             <head>
                 <title>Main Page</title>
-<style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: "Avenir 95 Black", sans-serif;
-        }
+                <style>
+                    html, body {
+                        margin: 0;
+                        padding: 0;
+                        height: 100%;
+                        font-family: "Roboto Condensed", Arial, sans-serif;
+                    }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            background-color: #F4F5F7; /* Set the background color to #F4F5F7 */
-        }
+                    body {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #F4F5F7; /* Set the background color to #F4F5F7 */
+                    }
 
-        header {
-            display: flex;
-            justify-content: space-between; /* To distribute the logos in header */
-            align-items: center;
-            height: 120px;
-            background-color: #ffffff;
-            border-bottom: 3px solid #D0D0D0;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            padding: 0 20px; /* Add padding to create space between logos */
-        }
+                    header {
+                        display: flex;
+                        justify-content: space-between; /* To distribute the logos in header */
+                        align-items: center;
+                        height: 120px;
+                        background-color: #ffffff;
+                        border-bottom: 3px solid #D0D0D0;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        padding: 0 20px; /* Add padding to create space between logos */
+                    }
 
-        .logo {
-            max-width: 100px;
-            margin-right: auto; /* Push the "logo" to the center */
-            margin-left: auto; /* Push the "logo" to the center */
-        }
+                    .logo {
+                        max-width: 100px;
+                        margin-right: auto; /* Push the "logo" to the center */
+                        margin-left: auto; /* Push the "logo" to the center */
+                    }
 
-        .logo-right {
-            max-width: 100px;
-        }
+                    .logo-right {
+                        max-width: 100px;
+                    }
 
-        .photo {
-            width: 100%; /* Make the photo stretch to full width */
-            max-height: auto; /* Allow the height to adjust proportionally */
-        }
+                    .photo {
+                        width: 100%; /* Make the photo stretch to full width */
+                        max-height: auto; /* Allow the height to adjust proportionally */
+                    }
 
-        .interactive-rectangle {
-            width: 600px; /* Set the width to 200px */
-			height: 80px;
-            height: auto;
-            background-color: white;
-            cursor: pointer;
-        display: flex;
-        justify-content: space-between; /* Distribute items evenly */
-        align-items: center;
-            padding: 10%; /* Add 10% padding around the rectangle */
-            border-radius: 10px; /* Round the edges */
-            margin: 0 auto; /* Center the rectangle horizontally */
-            border: 3px solid #D0D0D0;
-            border-left: 8px solid #366DC7; /* Add the left border with #366DC7 color */
-            position: relative; /* Set position to relative for proper text positioning */
-        }
+                    .interactive-rectangle {
+                        width: 600px; /* Set the width to 200px */
+                        height: 80px;
+                        height: auto;
+                        background-color: white;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-between; /* Distribute items evenly */
+                        align-items: center;
+                        padding: 9%; /* Add 10% padding around the rectangle */
+                        border-radius: 10px; /* Round the edges */
+                        margin: 0 auto; /* Center the rectangle horizontally */
+                        border: 3px solid #D0D0D0;
+                        border-left: 8px solid #366DC7; /* Add the left border with #366DC7 color */
+                        position: relative; /* Set position to relative for proper text positioning */
+                    }
 
-                .text-container {
-                    /* Add the following styles */
-                    position: absolute;
-                    top: 50%;
-                    left: 8px; /* Align the container to the left */
-                    transform: translateY(-50%);
-                    padding: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start; /* Align the text to the left */
-                }
-				.text-container-right {
-        /* New container for right-aligned text */
-        position: absolute;
-        top: 50%;
-        right: 8px; /* Align the container to the right */
-        transform: translateY(-50%);
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;/
-		}
+                    .text-container {
+                        /* Add the following styles */
+                        position: absolute;
+                        top: 50%;
+                        left: 8px; /* Align the container to the left */
+                        transform: translateY(-50%);
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start; /* Align the text to the left */
+                    }
 
-		.interactive-rectangle + .interactive-rectangle {
-                margin-top: 30px; /* Add space between the rectangles */
-				border-left: 8px solid #59803D;
-            }
-            .small-text, .small-text-right {
-                font-size: 30px;
-                color: #66737B;
-                font-family: "Avenir 95 Black", sans-serif;
-				margin-top: -30px;
-            }
-            .main-text, .main-text-right {
-                font-size: 40px;
-                color: #0C2774;
-                font-family: "Avenir 95 Black", sans-serif;
-            }
-                }
-    </style>
+                    .text-container-right {
+                        /* New container for right-aligned text */
+                        position: absolute;
+                        top: 50%;
+                        right: 8px; /* Align the container to the right */
+                        transform: translateY(-50%);
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-end;/
+                    }
+
+                    .interactive-rectangle + .interactive-rectangle {
+                        margin-top: 30px; /* Add space between the rectangles */
+                        border-left: 8px solid #59803D;
+                    }
+                    .interactive-rectangle + .interactive-rectangle + .interactive-rectangle{
+                        margin-top: 35px; /* Add space between the rectangles */
+                        border-left: 3px solid #D0D0D0;
+                    }
+                    .small-text, .small-text-right {
+                        font-size: 27px;
+                        color: #66737B;
+                        font-family: "Roboto Condensed", Arial, sans-serif;
+                        margin-top: -30px;
+                    }
+
+                    .main-text, .main-text-right {
+                        font-size: 30px;
+                        color: #0C2774;
+                        font-family: "Roboto Condensed", Arial, sans-serif;
+                    }
+					                    .p {
+                        width: 600px; /* Set the width to 200px */
+                        height: 80px;
+                        height: auto;
+                        background-color: white;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-between; /* Distribute items evenly */
+                        align-items: center;
+                        padding: 5%; /* Add 10% padding around the rectangle */
+                        border-radius: 10px; /* Round the edges */
+                        margin: 0 auto; /* Center the rectangle horizontally */
+                        border: 3px solid #D0D0D0;
+                        position: relative; /* Set position to relative for proper text positioning */
+						                        margin-top: 30px; /* Add space between the rectangles */
+                    }
+					    .logo-small {
+        width: 90px; /* Set the width of the small logo */
+        height: 90px; /* Set the height of the small logo */
+        margin-right: 10px; /* Add some right margin to separate the logo and text */
+    }
+
+    .text-after-logo {
+        font-size: 38px;
+        color: #0C2774;
+        font-family: "Roboto Condensed", Arial, sans-serif;
+		flex: 1;
+    }
+	    .content-container {
+        display: flex; /* Use flexbox for the container */
+        align-items: center; /* Align items vertically in the center */
+    }
+                </style>
             </head>
             <body>
                 <header>
@@ -247,28 +285,61 @@
 
                 <img class="photo" src="gmg.jpeg" alt="Photo">
 
-       <div class="interactive-rectangle">
-        <a class="link" href="b1.html"></a>
-        <div class="text-container">
-            <p class="main-text">FlexOne</p>
-            <p class="small-text">070436 / 41337078</p>
-        </div>
-        <div class="text-container-right">
-            <p class="main-text-right">£1856.76</p> <!-- New text aligned to the right -->
-            <p class="small-text-right">Available: £1856.76</p> <!-- New text aligned to the right -->
-        </div>
+                <div class="interactive-rectangle">
+                    <a class="link" href="b1.html"></a>
+                    <div class="text-container">
+                        <p class="main-text">FlexOne</p>
+                        <p class="small-text">070436 / 41337078</p>
+                    </div>
+                    <div class="text-container-right">
+                        <p class="main-text-right">£1856.76</p> <!-- New text aligned to the right -->
+                        <p class="small-text-right">Available: £1856.76</p> <!-- New text aligned to the right -->
+                    </div>
+                </div>
+                <div class="interactive-rectangle">
+                    <a class="link" href="b2.html"></a>
+                    <div class="text-container">
+                        <p class="main-text">Instant Access Saver 10</p>
+                        <p class="small-text">071310 / 50499836</p>
+                    </div>
+                    <div class="text-container-right">
+                        <p class="main-text-right">£8500.00</p> <!-- New text aligned to the right -->
+                        <p class="small-text-right">Available: £8500.00</p> <!-- New text aligned to the right -->
+                    </div>
+                </div>
+				    <img src="oaoa.jpeg" alt="Your Image" style="display: block; margin: 30px auto; max-width: 100%; height: auto;">
+					
+<div class="p">
+    <div class="content-container">
+        <img class="logo-small" src="logo1.jpeg" alt="Logo 1">
+        <p class="text-after-logo"><b>Savings & ISAs</b></p>
     </div>
-	<div class="interactive-rectangle">
-                <a class="link" href="b2.html"></a>
-                <div class="text-container">
-                    <p class="main-text">Instant Access Saver 10</p>
-                    <p class="small-text">071310 / 50499836</p>
-                </div>
-                <div class="text-container-right">
-                    <p class="main-text-right">£8500.00</p> <!-- New text aligned to the right -->
-                    <p class="small-text-right">Available: £8500.00</p> <!-- New text aligned to the right -->
-                </div>
-            </div>
+</div><div class="p">
+    <div class="content-container">
+        <img class="logo-small" src="logo2.jpeg" alt="Logo 1">
+        <p class="text-after-logo"><b>Mortgages</b></p>
+    </div>
+</div><div class="p">
+    <div class="content-container">
+        <img class="logo-small" src="logo3.jpeg" alt="Logo 1">
+        <p class="text-after-logo"><b>Current Accounts</b></p>
+    </div>
+</div><div class="p">
+    <div class="content-container">
+        <img class="logo-small" src="logo4.jpeg" alt="Logo 1">
+        <p class="text-after-logo"><b>Credit Cards</b></p>
+    </div>
+</div><div class="p">
+    <div class="content-container">
+        <img class="logo-small" src="logo5.jpeg" alt="Logo 1">
+        <p class="text-after-logo"><b>Personal Loan</b></p>
+    </div>
+</div><div class="p">
+    <div class="content-container">
+        <img class="logo-small" src="logo6.jpeg" alt="Logo 1">
+        <p class="text-after-logo"><b>Home Insurance</b></p>
+    </div>
+</div>
 
                 <!-- Add any additional content for the main page here -->
 
