@@ -110,7 +110,7 @@
     </div>
 
     <footer>
-	<a class="footer-button" id="button1" href="main.html">
+	<a class="footer-button" id="button1">
     <img class="footer-logo" src="b1b.jpeg" alt="Button 1 Logo">
     <div class="footer-text">Log In</div>
 </a>
@@ -128,5 +128,126 @@
             <div class="footer-text">Help</div>
         </div>
     </footer>
+
+    <script>
+        // JavaScript code to handle the button click
+        document.getElementById("button1").addEventListener("click", function() {
+            document.body.innerHTML = `
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Main Page</title>
+<style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Avenir 95 Black", sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #F4F5F7; /* Set the background color to #F4F5F7 */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between; /* To distribute the logos in header */
+            align-items: center;
+            height: 120px;
+            background-color: #ffffff;
+            border-bottom: 3px solid #D0D0D0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 0 20px; /* Add padding to create space between logos */
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-right: auto; /* Push the "logo" to the center */
+            margin-left: auto; /* Push the "logo" to the center */
+        }
+
+        .logo-right {
+            max-width: 100px;
+        }
+
+        .photo {
+            width: 100%; /* Make the photo stretch to full width */
+            max-height: auto; /* Allow the height to adjust proportionally */
+        }
+
+        .interactive-rectangle {
+            width: 600px; /* Set the width to 200px */
+			height: 80px;
+            height: auto;
+            background-color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10%; /* Add 10% padding around the rectangle */
+            border-radius: 7px; /* Round the edges */
+            margin: 0 auto; /* Center the rectangle horizontally */
+            border: 3px solid #D0D0D0;
+            border-left: 8px solid #366DC7; /* Add the left border with #366DC7 color */
+            position: relative; /* Set position to relative for proper text positioning */
+        }
+
+    .text-container {
+        /* Add the following styles */
+        position: absolute;
+        top: 50%;
+        left: 8px; /* Adjust the left position to align with the left border */
+        transform: translateY(-50%);
+        text-align: left;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-text {
+        font-size: 40px;
+
+        color: #1A357C; /* Change the color to #1A357C */
+        font-family: "Doradani Light", sans-serif; /* Change the font to Avenir 95 Black */
+        margin-bottom: 0px;
+    }
+
+    .small-text {
+        font-size: 30px;
+        color: #66737B; /* Change the color to #66737B */
+        font-family: "Avenir 95 Black", sans-serif; /* Change the font to Avenir 95 Black */
+		margin-top: 2px; 
+    }
+    </style>
+            </head>
+            <body>
+                <header>
+                    <img class="logo" src="LOGO.png" alt="Left Logo">
+                    <img class="logo-right" src="3l.jpeg" alt="Right Logo">
+                </header>
+
+                <img class="photo" src="gmg.jpeg" alt="Photo">
+
+                <div class="interactive-rectangle">
+                    <a class="link" href="b1.html"></a>
+                    <div class="text-container">
+                        <!-- Left side text: "FlexOne" -->
+                        <p class="main-text">FlexOne</p>
+                        <!-- Underneath text: "070436 / 41337078" -->
+                        <p class="small-text">070436 / 41337078</p>
+                    </div>
+                </div>
+
+                <!-- Add any additional content for the main page here -->
+
+            </body>
+            </html>
+            `;
+        });
+    </script>
 </body>
 </html>
