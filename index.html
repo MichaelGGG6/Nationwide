@@ -28,7 +28,7 @@
         }
 
         .logo {
-            max-width: 100px;
+            max-width: 120px;
         }
 
         .body-container {
@@ -51,7 +51,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            height: 120px;
+            height: 130px;
             background-color: #ffffff;
             border-top: 5px solid #D0D0D0; /* Set the top border to light gray (#D0D0D0) with 5px solid */
             border-bottom-left-radius: 10px;
@@ -66,8 +66,8 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            height: 120px;
-            width: 120px;
+            height: 140px;
+            width: 140px;
         }
 
         .footer-logo {
@@ -185,44 +185,58 @@
             height: auto;
             background-color: white;
             cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        display: flex;
+        justify-content: space-between; /* Distribute items evenly */
+        align-items: center;
             padding: 10%; /* Add 10% padding around the rectangle */
-            border-radius: 7px; /* Round the edges */
+            border-radius: 10px; /* Round the edges */
             margin: 0 auto; /* Center the rectangle horizontally */
             border: 3px solid #D0D0D0;
             border-left: 8px solid #366DC7; /* Add the left border with #366DC7 color */
             position: relative; /* Set position to relative for proper text positioning */
         }
 
-    .text-container {
-        /* Add the following styles */
+                .text-container {
+                    /* Add the following styles */
+                    position: absolute;
+                    top: 50%;
+                    left: 8px; /* Align the container to the left */
+                    transform: translateY(-50%);
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start; /* Align the text to the left */
+                }
+				.text-container-right {
+        /* New container for right-aligned text */
         position: absolute;
         top: 50%;
-        left: 8px; /* Adjust the left position to align with the left border */
+        right: 8px; /* Align the container to the right */
         transform: translateY(-50%);
-        text-align: left;
         padding: 10px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-    }
+        justify-content: center;
+        align-items: flex-end;/
+		}
 
-    .main-text {
-        font-size: 40px;
-
-        color: #1A357C; /* Change the color to #1A357C */
-        font-family: "Doradani Light", sans-serif; /* Change the font to Avenir 95 Black */
-        margin-bottom: 0px;
-    }
-
-    .small-text {
-        font-size: 30px;
-        color: #66737B; /* Change the color to #66737B */
-        font-family: "Avenir 95 Black", sans-serif; /* Change the font to Avenir 95 Black */
-		margin-top: 2px; 
-    }
+		.interactive-rectangle + .interactive-rectangle {
+                margin-top: 30px; /* Add space between the rectangles */
+				border-left: 8px solid #59803D;
+            }
+            .small-text, .small-text-right {
+                font-size: 30px;
+                color: #66737B;
+                font-family: "Avenir 95 Black", sans-serif;
+				margin-top: -30px;
+            }
+            .main-text, .main-text-right {
+                font-size: 40px;
+                color: #0C2774;
+                font-family: "Avenir 95 Black", sans-serif;
+            }
+                }
     </style>
             </head>
             <body>
@@ -233,15 +247,28 @@
 
                 <img class="photo" src="gmg.jpeg" alt="Photo">
 
-                <div class="interactive-rectangle">
-                    <a class="link" href="b1.html"></a>
-                    <div class="text-container">
-                        <!-- Left side text: "FlexOne" -->
-                        <p class="main-text">FlexOne</p>
-                        <!-- Underneath text: "070436 / 41337078" -->
-                        <p class="small-text">070436 / 41337078</p>
-                    </div>
+       <div class="interactive-rectangle">
+        <a class="link" href="b1.html"></a>
+        <div class="text-container">
+            <p class="main-text">FlexOne</p>
+            <p class="small-text">070436 / 41337078</p>
+        </div>
+        <div class="text-container-right">
+            <p class="main-text-right">£1856.76</p> <!-- New text aligned to the right -->
+            <p class="small-text-right">Available: £1856.76</p> <!-- New text aligned to the right -->
+        </div>
+    </div>
+	<div class="interactive-rectangle">
+                <a class="link" href="b2.html"></a>
+                <div class="text-container">
+                    <p class="main-text">Instant Access Saver 10</p>
+                    <p class="small-text">071310 / 50499836</p>
                 </div>
+                <div class="text-container-right">
+                    <p class="main-text-right">£8500.00</p> <!-- New text aligned to the right -->
+                    <p class="small-text-right">Available: £8500.00</p> <!-- New text aligned to the right -->
+                </div>
+            </div>
 
                 <!-- Add any additional content for the main page here -->
 
