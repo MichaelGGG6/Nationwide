@@ -1,24 +1,25 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Footer with Buttons</title>
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
+            font-family: "Avenir 95 Black", sans-serif;
+        }
+
+        body {
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
         }
 
         header {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100px;
+            height: 120px;
             background-color: #ffffff;
             border-bottom: 3px solid #D0D0D0;
             border-top-left-radius: 10px;
@@ -30,15 +31,19 @@
         }
 
         .body-container {
-            background-color: #F3F5F7;
+            flex: 1;
+            background-image: url("gogo.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex: 1;
         }
 
         .larger-image {
-            max-width: 300px;
+            width: 100%;
+            max-height: 100%;
         }
 
         footer {
@@ -57,23 +62,23 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-			justify-content: center;
+            justify-content: center;
             cursor: pointer;
-			height: 100px; /* Adjust the height as needed */
-            width: 100px; /* Adjust the width as needed */
+            height: 120px;
+            width: 120px;
         }
 
         .footer-logo {
-            max-width: 60px;
+            max-width: 80px;
             transition: all 0.3s ease-in-out;
         }
 
         .footer-text {
             margin-top: 5px;
-			text-allign: center;
+            text-align: center;
+            font-weight: bold;
+            color: #9DA2A6; /* Set the text color to light gray */
         }
-
-
     </style>
 </head>
 <body>
@@ -82,11 +87,11 @@
     </header>
 
     <div class="body-container">
-        <img class="larger-image" src="path/to/larger-image.png" alt="Larger Image">
+        <img class="larger-image" src="gogo.jpeg" alt="Larger Image">
         <!-- Add any additional content for the body here -->
     </div>
 
-     <footer>
+    <footer>
         <div class="footer-button" id="button1">
             <img class="footer-logo" src="b1a.jpeg" alt="Button 1 Logo">
             <div class="footer-text">Log In</div>
